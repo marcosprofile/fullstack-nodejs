@@ -1,5 +1,5 @@
 const express = require('express')
-const UserModel = require('../src/models/user.model')
+const UserModel = require('../models/user.model')
 
 const app = express()
 
@@ -28,7 +28,7 @@ app.get('/users', async (req, res) => {
 
     res.status(200).json(users)
   } catch (error) {
-    res.status(500).send(error.message) 
+    res.status(500).send(error.message)
   }
 })
 

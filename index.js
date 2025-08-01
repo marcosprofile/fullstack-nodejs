@@ -12,4 +12,4 @@ const connectToDatabase = require('./src/database/connect.js')
 dotenv.config()
 connectToDatabase()
 
-require('./modules/express.js')
+require('./src/modules/express.js')
